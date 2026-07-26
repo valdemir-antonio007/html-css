@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(182, 164, 164);
+}
+
+header {
+    
+    background-color: white;
+    padding: 10px;
+}
+
+nav {
+    background-color: lightsalmon;
+    padding: 10px;
+    transition: all ease-in 0.5s;
+    box-shadow: 2px 2px 2px black;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+nav > a:hover {
+    
+    color: slateblue;
+    
+    
+    
+}
+
+
+main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+article {
+    background-color: cornsilk;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}

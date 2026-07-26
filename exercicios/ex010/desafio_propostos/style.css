@@ -1,0 +1,22 @@
+ #foto_perfil {
+    border: 1px solid gray;
+    border-radius: 50%;
+ }
+
+ #sobre {
+    width: 50%;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: sans-serif;
+ }
+  body {
+    background-color: chocolate;
+    color: white;
+    font-size: 20px;
+  }
+  .sub-title {
+    width: 40%;
+    text-align: justify;
+    line-height: 25px;
+  }

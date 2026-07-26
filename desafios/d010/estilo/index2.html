@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: tomato;
+            color: white;
+            font-size: 30px;
+        }
+        .area {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            font-size: 30px;
+            line-height: 200px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Conhecendo o DOM</p>
+    <p>Primeiros passos</p>
+    <div class="area">
+Interaja
+    </div>
+
+    <script>
+
+        document.write(window.navigator.appName+"<br>")
+        document.write(window.navigator.language)
+
+        document.write(window.history.back()+"<br>")
+
+        document.write(window.document.URL+"<br>")
+        document.write(window.location.pathname+"<br>")
+        document.write(window.location.port+"<br>")
+
+        var h_1 = document.getElementsByTagName('h1');
+        h_1[0].innerHTML = "Efeitos"
+        var p12 = document.getElementsByTagName('p');
+
+        var area = document.getElementsByClassName('area');
+
+        for(index = 0; index < p12.length; index++){
+            document.write(p12[index].innerHTML+" "+index+"<br>");
+        }
+
+          area[0].addEventListener('mouseenter', entrar);
+          area[0].addEventListener('mouseout', saiu);
+          area[0].addEventListener('click', clicou);
+
+
+        function entrar(){
+           area[0].innerHTML = 'entrou'
+        }
+
+        function saiu(){
+            area[0].innerHTML = 'saiu'
+        }
+
+        function clicou(){
+            area[0].innerHTML = 'clicou'
+        }
+
+      
+    </script>
+</body>
+</html>

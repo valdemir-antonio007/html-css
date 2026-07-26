@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: tomato;
+            color: white;
+            font-size: 30px;
+        }
+        p {
+            cursor: pointer;
+        }
+        .area {
+            width: 300px;
+            height: 300px;
+            background-color: violet;
+            line-height: 300px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos do DOM</h1>
+    <p>Existe varios elementos da arvore DOm</p>
+    <p onclick="testar()">Clique aqui</p>
+    <div class="area">Interaja</div>
+
+<script>
+      document.write(window.navigator.appName+"<br>")
+      document.write(window.location.origin+"<br>")
+      document.write(window.location.pathname+"<br>")
+      document.write(window.location.href+"<br>")
+
+      document.write(window.navigator.appVersion+"<br>")
+      document.write(window.navigator.language+"<br>")
+      
+      var h_1 = document.getElementsByTagName('h1');
+      document.write(h_1[0].innerHTML);
+
+      var ps = document.getElementsByTagName('p');
+      var exp = "";
+
+  for (let index = 0; index < ps.length; index++) {
+    const element = ps[index];
+        
+           document.write(element.innerHTML);
+        
+  }
+
+
+  const area = document.getElementsByClassName('area');
+
+function entrar(){
+      area[0].style.backgroundColor = 'red';
+}
+
+function sair(){
+    area[0].innerHTML = 'saiu';
+}
+
+area[0].addEventListener('click', entrar);
+area[0].addEventListener('mouseout', sair);
+      
+
+
+     function testar(){
+        for (let index = 0; index < ps.length; index++) {
+             exp += ps[index].innerHTML + "<br>";           
+            
+        }    
+        document.write(exp);
+    
+     }
+
+   
+      
+</script>
+
+</body>
+</html>

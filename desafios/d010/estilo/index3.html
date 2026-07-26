@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: violet;
+            color: black;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Conhecendo o DOM</p>
+    <p>Primeiros Passos</p>
+
+    <nav>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </nav>
+
+
+    <script>
+        var h_1 = document.getElementsByTagName('h1');
+        h_1[0].innerHTML += ' Nivel Basico'
+        h_1[0].style.color = 'white';
+    </script>
+</body>
+</html>

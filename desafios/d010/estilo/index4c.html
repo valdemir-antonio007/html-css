@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap');
+
+       @font-face {
+        font-family: "Android";
+        src: url("../fontes/idroid.otf");
+       }
+
+        :root {
+            --cor0:  #ADEEC5;
+            --cor1:  #004f5a;
+            --cor2: #1234ff;
+            --cor3: #9182aa;
+            --cor4: #4567ce;
+
+            --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+            --fonte-destaque: "Playwrite ID", cursive; 
+            --fonte-android: "Android", cursive;
+        }
+
+        body {
+            background-color: gray;
+        }
+        main {
+            background-image: linear-gradient(to right, var(--cor0), var(--cor4));
+            max-width: 1000px;
+            min-width: 350px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: justify;
+            text-indent: 50px;
+            font-family: var(--fonte-destaque);
+            
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Responsividade</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt nobis vel sapiente quo hic ut illum veritatis, animi voluptatum recusandae repellat deleniti libero doloribus quas, nisi explicabo, dolore dicta.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt omnis commodi molestiae neque possimus magni doloribus, repellendus accusamus deleniti magnam quae nobis deserunt nesciunt dolor quia ipsam delectus quibusdam cupiditate?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae praesentium culpa similique ea perspiciatis eligendi, ullam a aliquam vel eveniet nesciunt inventore debitis doloribus quaerat veritatis soluta optio velit assumenda?
+            <img src="../imagens/irina-blok.jpg" alt="Irina blok">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quo molestiae architecto tempora similique quod voluptatem consectetur aliquid eligendi. Reiciendis aliquid exercitationem possimus id consectetur doloremque sint optio et aspernatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ut quas doloremque vitae maiores quibusdam illum? Eveniet voluptas quis, laboriosam impedit doloremque, enim repudiandae delectus expedita rem asperiores odio voluptatem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, numquam? Nisi rem asperiores consequuntur dolor provident tempore mollitia. Ex quia sunt perferendis cumque alias hic aliquid quod excepturi commodi ipsa!
+
+            </p>
+        </p>
+    </main>
+</body>
+</html>

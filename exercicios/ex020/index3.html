@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: green;
+        }
+        a::after {
+            content: '[link]';
+            color: gray;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        a::before {
+            content: '*';
+            color: green;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <li> <a target="_blank" href="https://www.dafont.com/pt/"> Repositorio do GitHub</a>  </li>
+    <li> <a target="_blank" href="https://color.adobe.com/create/color-wheel"> Canal do Youtube </a> </li>
+    <li> <a target="_blank" href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF"> Site do Curso em Video</a></li>
+</body>
+</html>

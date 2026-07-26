@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas   </h1>
+    <p>Tente abrir este site em varios dispositivos ou simplesmente aumente ou diminua o tamanho de seu navegador</p>
+
+   <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_300.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto_700.png" type="image/png">
+        <img src="imagens/foto_1000.png" alt="Imagem Dinamica">
+   </picture>
+
+   <h1>Reproduzindo audio</h1>
+   <p>Vamos aprender reproduzir audio em HTML5</p>
+   
+   <audio src="midia/Lost Myself - Lalanne.mp3" #autoplay controls ></audio>
+   
+  
+</body>
+</html>
