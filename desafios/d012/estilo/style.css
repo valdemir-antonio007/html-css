@@ -40,10 +40,12 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: "Playwrite NZ Basic", cursive;
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 
-
+section p {
+    margin-bottom: 20px;
+}
 
 .normal {
     background-color: white;
@@ -56,7 +58,7 @@ section {
 }
 .imagem p {
     background-color: rgba(0, 0, 0, 0.441);
-    width: 400px;
+    display:inline-block
 }
 
 footer {
