@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            
+            height: 100vh;
+            color: black;
+            font-size: 1.5em;
+        }
+        table {
+            border: 2px solid black;
+            margin: auto;
+            border-collapse: collapse;
+            width: 700px;
+        }
+        thead {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray  ;
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: bisque;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .num {
+            text-align: right;
+        }
+        caption {
+            background-color: rgb(216, 212, 212);
+            font-size: 1.5em;
+            padding: 10px;
+            color: white;
+        }
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <table>
+            <caption>Unidades Federativas do Brasil</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">Populaçao</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>SaoPaulo</td>
+                    <td class="num">32000000</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">22000000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Ceara</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Para</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Parana</td>
+                    <td class="num">19000000</td>
+                </tr>
+
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">22000000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Ceara</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Para</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Parana</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">22000000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Ceara</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Para</td>
+                    <td class="num">19000000</td>
+                </tr>
+                <tr>
+                    <td>Parana</td>
+                    <td class="num">19000000</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+
+                <tr>
+                    <th scope="row">Total Habitantes</th>
+                    <td class="num">210000000</td>
+                </tr>
+
+            </tfoot>
+        </table>
+
+    </main>
+    
+</body>
+</html>
