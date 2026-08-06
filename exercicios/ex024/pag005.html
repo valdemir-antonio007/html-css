@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clique em mim</h1>
+    <input onclick="clicou()" type="submit" value="Clique">
+    <div id="res">
+
+    </div>
+
+
+   <script>
+       function clicou(){
+            let res = document.getElementById("res");
+            res.innerHTML += `Clicou <p>`
+       }
+   </script>
+</body>
+</html>
