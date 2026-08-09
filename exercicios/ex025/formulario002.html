@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <form action="" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuario</label>
+            <input placeholder="Nome" required minlength="5" maxlength="15" type="text" name="user" id="iuser" autocomplete="nickname">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input placeholder="Senha minimo 4 caracteres" minlength="4" maxlength="8" type="password" name="senha" id="isenha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
