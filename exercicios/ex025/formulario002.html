@@ -20,6 +20,30 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+        <p>
+            <label for="">Data Nascimento:</label><input  type="date" name="nasc" id="nasc">
+            <input onclick="mostrarData()" type="button" value="Pegar Data">
+        </p>
+
+        <script>
+            
+
+
+            function mostrarData(){
+                let txt_nasc = document.getElementById("nasc").value
+                let data = formataData(txt_nasc); 
+                alert(`A data selecionada é: ${data}`)
+            
+            }
+
+            function formataData(data){
+                let str = data.split("-");
+                let data_formatada = str[2]+"-"+str[1]+"-"+str[0]
+                return data_formatada;
+            }
+        </script>
+
+
     </form>
     
 </body>

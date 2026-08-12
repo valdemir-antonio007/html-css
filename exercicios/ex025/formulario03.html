@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body onload="pegaData()">
+
+    <main>
+        <form action="" method="get">
+            <p>
+                <label for="">Nome:</label>
+                <input type="text" name="nome" placeholder="Nome" id="nome"
+                autocomplete="name" maxlength="30" required>
+            </p>
+            <p>
+                <label for="">Media</label>
+                <input value="5" type="number" name="media" id="media" placeholder="Media"
+               step="0.5" required>
+            </p>
+            <p>
+                <label for="">Periodo Letivo</label>
+                <input   type="month" name="mes" id="mes">
+            </p>
+            <p>
+                <label for="">Dia da Prova:</label>
+                <input  type="date" name="dia" id="dia">
+            </p>
+            <p>
+                <label for="">Hora da Prova:</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input onclick="pegaData()" type="button" value="Pega data">
+            </p>
+        </form>
+    </main>
+
+    <script>
+        function pegaData(){
+            let data = new Date();
+            let ano = data.getFullYear();
+            let mes = Number(data.getMonth())+1;
+            let dia = Number(data.getDate());
+            let hora = data.getHours();
+            let minutes = data.getMinutes()
+
+            let txt_month = document.getElementById("mes");
+            let txt_dia = document.getElementById("dia");
+            let txt_hora = document.getElementById("hora");
+            
+            
+            if(mes <10){
+                mes = "0"+mes;
+            }
+            if(dia<10){
+                dia = "0"+dia;
+            }
+            if(hora < 10){
+                hora = "0"+hora;
+            }
+            if(minutes < 10){
+                minutes = "0"+minutes
+            }
+            txt_month.value = `${ano}-${mes}`
+            txt_dia.value = `${ano}-${mes}-${dia}`
+            txt_hora.value = `${hora}:${minutes}`            
+        }
+    </script>
+    
+</body>
+</html>
