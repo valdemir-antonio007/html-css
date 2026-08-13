@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        form {
+            width: 600px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.5EM;
+            background-color: #191a1b;
+            padding: 20px;
+            border-radius: 20px;
+            color:#d54e04 ;
+        }
+        input {
+        height: 30px;
+        }
+        .botao {
+            background-color: springgreen;
+            border-radius: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="pegaData()">
+  <form action="" method="get">
+      <fieldset>
+        <legend>Formulario</legend>
+          <label for="">Nome</label> <input required type="text" name="nome" id="nome"
+          placeholder="Nome" minlength="5" maxlength="30" autocomplete="nickname" >
+          <p>
+            <label for="">Media:</label> <input required type="number" name="media" id="media"
+            placeholder="Digite a media" value="2" step="0.2">
+          </p>
+          <p>
+            <label for="">Periodo Letivo:</label> <input value="" type="month" name="periodo" id="periodo">
+          </p>
+          <p>
+            <label for="">Dia da Prova:</label> <input type="date" name="dia" id="dia">
+          </p>
+          <P>
+            <label for="">Hora da Prova:</label> <input type="time" name="hora" id="hora" value="">
+          </P>
+          <p>
+            <label for="">Email:</label> <input type="email" name="email" id="email"
+            autocomplete="email" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_{|}~-]+@a-zA-Z0-9?(?:.a-zA-Z0-9?)*$`">
+          </p>
+          <p>
+            <input type="submit" class="botao" value="Enviar">
+            <input type="reset" class="botao" value="Limpar">
+          </p>
+      </fieldset>
+  </form>
+
+
+  <script>
+       function pegaData(){
+          let data = new Date();
+          let ano = data.getFullYear();
+          let mes = data.getMonth()+1;
+          let dia = data.getDate();
+          let hora = data.getHours();
+          let minutes = data.getMinutes();
+
+          if(mes < 10){
+            mes = "0"+mes;
+          }
+          if(dia < 10){
+            dia = "0"+dia;
+          }
+          if(hora < 10){
+            hora = "0"+hora;
+          }
+          if(minutes < 10){
+            minutes = "0"+minutes;
+          }
+
+          let txt_periodo = document.getElementById("periodo")
+          txt_periodo.value = `${ano}-${mes}`
+
+          let txt_dia = document.getElementById("dia")
+          txt_dia.value = `${ano}-${mes}-${dia}`
+
+          let txt_hora = document.getElementById("hora");
+          txt_hora.value = `${hora}:${minutes}`
+       }
+  </script>
+</body>
+</html>
