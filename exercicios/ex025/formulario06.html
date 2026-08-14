@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <form action="" method="get">
+        
+        <fieldset>
+            <legend>Mais exemplos de formularios</legend>
+            <p>
+                <label for="">Estado:</label>
+                <select name="estado" id="iestado">
+                    <option value="">---Escolha---</option>
+
+                    <optgroup label="Sudeste">
+                         <option value="MG">Minas Gerais</option>
+                         <option value="SP">Sao Paulo</option>
+                    </optgroup>
+                   
+                    <optgroup label="Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhao</option>
+                    </optgroup>
+                    
+                </select>
+            </p>
+            <p>
+                <label for="">Profissao:</label>
+                <input type="text" name="prof" id="iprof" list="list-prof">
+                <datalist id="list-prof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="">Mensagem:</label> <br>
+                <textarea name="mens" id="imens" cols="30" rows="10"></textarea>
+            </p>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
